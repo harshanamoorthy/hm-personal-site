@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TLSAnalyzer from '../components/TLSAnalyzer';
+import PQCComparator from '../components/PQCComparator';
 ---
 
 <Layout title="Lab - Interactive Security Tools | Harshana Moorthy">
@@ -15,14 +16,25 @@ import TLSAnalyzer from '../components/TLSAnalyzer';
       </div>
 
       <!-- Lab Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <a href="#tls-analyzer" class="bg-white p-6 rounded-lg border-2 border-[#4B00FF] hover:shadow-lg transition-shadow">
           <div class="text-3xl mb-3">🔍</div>
           <h3 class="text-lg font-bold mb-2">TLS Analyzer</h3>
           <p class="text-gray-600 text-sm">
             Analyze domain TLS configuration, certificates, and PQC readiness
           </p>
-          <span className="inline-block mt-3 text-[#4B00FF] text-sm font-semibold">
+          <span class="inline-block mt-3 text-[#4B00FF] text-sm font-semibold">
+            Active →
+          </span>
+        </a>
+
+        <a href="#pqc-comparator" class="bg-white p-6 rounded-lg border-2 border-[#4B00FF] hover:shadow-lg transition-shadow">
+          <div class="text-3xl mb-3">🔮</div>
+          <h3 class="text-lg font-bold mb-2">PQC Algorithm Comparator</h3>
+          <p class="text-gray-600 text-sm">
+            Compare ML-KEM and ML-DSA vs traditional algorithms
+          </p>
+          <span class="inline-block mt-3 text-[#4B00FF] text-sm font-semibold">
             Active →
           </span>
         </a>
@@ -33,26 +45,31 @@ import TLSAnalyzer from '../components/TLSAnalyzer';
           <p class="text-gray-600 text-sm">
             Interactive dependency graph of certificate relationships
           </p>
-          <span className="inline-block mt-3 text-gray-500 text-sm font-semibold">
+          <span class="inline-block mt-3 text-gray-500 text-sm font-semibold">
             Coming Soon
           </span>
         </div>
 
         <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 opacity-60">
-          <div class="text-3xl mb-3">🔮</div>
-          <h3 class="text-lg font-bold mb-2">PQC Algorithm Playground</h3>
+          <div class="text-3xl mb-3">🤖</div>
+          <h3 class="text-lg font-bold mb-2">SE Agent</h3>
           <p class="text-gray-600 text-sm">
-            Compare ML-KEM and ML-DSA vs traditional algorithms
+            AI-powered SE assistant with RFP analysis and POC guidance
           </p>
-          <span className="inline-block mt-3 text-gray-500 text-sm font-semibold">
+          <span class="inline-block mt-3 text-gray-500 text-sm font-semibold">
             Coming Soon
           </span>
         </div>
       </div>
 
       <!-- Active Tool Section -->
-      <div id="tls-analyzer" class="scroll-mt-20">
+      <div id="tls-analyzer" class="scroll-mt-20 mb-16">
         <TLSAnalyzer client:load />
+      </div>
+
+      <!-- PQC Comparator Section -->
+      <div id="pqc-comparator" class="scroll-mt-20">
+        <PQCComparator client:load />
       </div>
     </div>
   </section>
