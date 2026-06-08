@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Experience - Harshana Moorthy">
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-4">Experience</h1>
+      <p class="text-xl text-gray-600 mb-12">
+        10+ years building and leading solution engineering teams in PKI, CLM, and machine identity.
+      </p>
+
+      <!-- Current Role -->
+      <div class="mb-16">
+        <div class="bg-gradient-to-r from-[#4B00FF] to-[#FF3827] text-white p-8 rounded-lg mb-12">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h2 class="text-2xl font-bold">VP of Solution Engineering</h2>
+              <p class="text-gray-100">AppViewX</p>
+            </div>
+            <span class="bg-white text-[#4B00FF] px-4 py-1 rounded-full font-semibold text-sm">
+              March 2025 - Present
+            </span>
+          </div>
+          <ul class="space-y-2 text-gray-100">
+            <li>• Leading global SE team of 14 across North America, EMEA, and APAC</li>
+            <li>• Scaled team ARR from $35M to $53M</li>
+            <li>• 80% POC-to-close rate on $150K+ ACV enterprise deals</li>
+            <li>• Driving post-quantum cryptography initiatives for Fortune 500 customers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Career Timeline -->
+      <div class="space-y-8">
+        <div class="border-l-4 border-[#4B00FF] pl-6 py-4">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <h3 class="text-xl font-bold">Director / Lead Principal Solutions Architect</h3>
+              <p class="text-gray-600">AppViewX</p>
+            </div>
+            <span class="text-sm text-gray-500 whitespace-nowrap">June 2023 - March 2025</span>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Built and led team of 3 direct reports in player-coach capacity</li>
+            <li>• Personal ARR contribution: $21M+</li>
+            <li>• Architected solutions for JPMC, NYL, Macy's, McDonald's IoT deployment (50K+ devices)</li>
+            <li>• Created academy.appviewx.com technical enablement platform</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-[#938776] pl-6 py-4">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <h3 class="text-xl font-bold">Enterprise Solutions Architect</h3>
+              <p class="text-gray-600">AppViewX</p>
+            </div>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2020 - June 2023</span>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Led enterprise PKI/CLM transformations for Fortune 500</li>
+            <li>• Designed hybrid cloud certificate management architectures</li>
+            <li>• 6-9 month sales cycles with $150K+ ACV deals</li>
+            <li>• Built competitive RFP response frameworks</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-[#938776] pl-6 py-4">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <h3 class="text-xl font-bold">Senior Solutions Engineer</h3>
+              <p class="text-gray-600">AppViewX</p>
+            </div>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2018 - 2020</span>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Technical pre-sales and POC delivery</li>
+            <li>• ACME, EST, SCEP protocol implementations</li>
+            <li>• Kubernetes cert-manager integration development</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-[#938776] pl-6 py-4">
+          <div class="flex justify-between items-start mb-3">
+            <div>
+              <h3 class="text-xl font-bold">Customer Success Engineer / Solutions Engineer</h3>
+              <p class="text-gray-600">AppViewX</p>
+            </div>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2015 - 2018</span>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Customer onboarding and technical support</li>
+            <li>• Integration development for ADCS, F5, AWS</li>
+            <li>• Transitioned to pre-sales motion</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Key Customers Section -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-bold mb-6">Notable Customer Engagements</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {['JPMC', 'McDonald\'s', 'Macy\'s', 'UPS', 'FedEx', 'BMW', 'Lockheed Martin', 'Northwell Health'].map((customer) => (
+            <div class="bg-[#EFE9E1] px-4 py-3 rounded-lg text-center font-semibold">
+              {customer}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- GSI Partners -->
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold mb-6">GSI Partnerships</h2>
+        <div class="flex flex-wrap gap-4">
+          {['Accenture', 'Deloitte', 'TCS', 'HCL', 'Infosys'].map((partner) => (
+            <span class="px-4 py-2 bg-white border border-gray-200 rounded-lg">
+              {partner}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Impact Metrics -->
+      <div class="mt-16 bg-[#EFE9E1] p-8 rounded-lg">
+        <h2 class="text-2xl font-bold mb-6">Key Metrics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <div class="text-3xl font-bold text-[#4B00FF] mb-2">$53M</div>
+            <p class="text-gray-700">Team ARR (scaled from $35M)</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-[#4B00FF] mb-2">80%</div>
+            <p class="text-gray-700">POC-to-Close Rate</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-[#4B00FF] mb-2">14</div>
+            <p class="text-gray-700">Global Team Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "VP of Solution Engineering | PKI, CLM & Machine Identity Expert" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white">
+    <nav class="border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="/" class="text-2xl font-bold bg-gradient-to-r from-[#4B00FF] to-[#FF3827] bg-clip-text text-transparent">
+              Harshana Moorthy
+            </a>
+          </div>
+          <div class="flex items-center space-x-8">
+            <a href="/" class="text-gray-700 hover:text-[#4B00FF] transition-colors">Home</a>
+            <a href="/about" class="text-gray-700 hover:text-[#4B00FF] transition-colors">About</a>
+            <a href="/experience" class="text-gray-700 hover:text-[#4B00FF] transition-colors">Experience</a>
+            <a href="/lab" class="text-gray-700 hover:text-[#4B00FF] transition-colors">Lab</a>
+            <a href="/insights" class="text-gray-700 hover:text-[#4B00FF] transition-colors">Insights</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <main>
+      <slot />
+    </main>
+    
+    <footer class="bg-[#1A1A2E] text-white mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">Harshana Moorthy</h3>
+            <p class="text-gray-300">VP of Solution Engineering at AppViewX</p>
+            <p class="text-gray-300">Leading global SE teams across PKI, CLM & Machine Identity</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Connect</h3>
+            <div class="space-y-2">
+              <a href="https://linkedin.com/in/harshanamoorthy" class="block text-gray-300 hover:text-[#4B00FF] transition-colors">LinkedIn</a>
+              <a href="mailto:harshana@appviewx.com" class="block text-gray-300 hover:text-[#4B00FF] transition-colors">Email</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Expertise</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-[#4B00FF] text-white text-sm rounded-full">PKI</span>
+              <span class="px-3 py-1 bg-[#4B00FF] text-white text-sm rounded-full">CLM</span>
+              <span class="px-3 py-1 bg-[#4B00FF] text-white text-sm rounded-full">PQC</span>
+              <span class="px-3 py-1 bg-[#4B00FF] text-white text-sm rounded-full">Machine Identity</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+          <p>© {new Date().getFullYear()} Harshana Moorthy. Built with Astro and Cloudflare.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

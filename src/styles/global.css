@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* AVX Brand Colors */
+  --color-avx-indigo: #4B00FF;
+  --color-avx-red-orange: #FF3827;
+  --color-avx-cream: #EFE9E1;
+  --color-avx-stone: #938776;
+  --color-avx-black: #000000;
+  --color-avx-near-black: #1A1A2E;
+  
+  /* Semantic colors */
+  --color-primary: var(--color-avx-indigo);
+  --color-accent: var(--color-avx-red-orange);
+  --color-background: #FFFFFF;
+  --color-surface: var(--color-avx-cream);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-avx-near-black);
+}
